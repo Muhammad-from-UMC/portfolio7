@@ -4,9 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
     <title>Document</title>
 </head>
 <body>
-    <header class="header"></header>
+    <header class="header">
+        <div class="container header__container">
+            <div class="inner-container">
+                <div class="header__flex-box">
+                    <div class="logo-wrapper">
+                        <img class="logo-file" src="img/logo.png" alt="logo">
+                    </div>
+                    <nav class="header__nav-bar">
+                        <ul class="header__nav-bar_flex">
+                            <li class="nav-line"><a class="nav-link" href="#">Обзор </a></li>
+                            <li class="nav-line"><a class="nav-link" href="#">Особенности </a></li>
+                            <li class="nav-line"><a class="nav-link" href="#">Технология </a></li>
+                            <li class="nav-line"><a class="nav-link" href="#">Контакты </a></li>
+                            <li class="nav-line"><a class="nav-link" href="#">Войти</a></li>
+                        </ul>
+                        <button class="button-style nav-bar_button">Вход</button>
+                    </nav>
+                </div>
+                <div class="header__main_wrapper">
+                    <h1 class="header__headline-h1">CloudBudget</h1>
+                    <p class="header__text-p">Управление бюджетом в для всех. Всего 69,95 € в месяц после 7-дневной пробной версии за 4,99 €</p>
+                    <button class="button-style header__button">Попробовать</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="video">
+        <div class="container">
+            <div class="inner-container">
+                <h2 class="h2_style video__headline_h2">Простое приложение для управления бюджетом</h2>
+                <div class="video__flex-box">
+                    <div class="text-wrapper">
+                        <p class="p-text_style video__text-p">Наше приложение создано, чтобы вы могли в реальном времени управлять своим бюджетом и расходами в режиме онлайн с любого устройства. Оно предоставляет подробные отчеты о доходах и расходах с графиками, чтобы вы сразу могли увидеть расходы и бюджет. Читайте ниже, чтобы узнать больше.</p>
+                        <a class="p-text_style video__link" href="#">Узнать подробнее</a>
+                    </div>
+                    <div class="video__image-wrapper">
+                        <img class="video__image-file" src="img/video__image-file.png" alt="video__image-file">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
