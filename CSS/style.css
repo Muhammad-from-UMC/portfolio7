@@ -47,6 +47,7 @@ a {
 }
 .header__container {
     background-image: url(../img/header__bg-image.jpg);
+    background-position: center;
 }
 .header__flex-box {
     display: flex;
@@ -59,12 +60,14 @@ a {
 .header__nav-bar {
     display: flex;
     justify-content: space-between;
+    width: 739px;
 }
 .header__nav-bar_flex {
     display: flex;
     list-style: none;
     column-gap: 20px;
     padding-top: 10px;
+    margin-right: 199px;
 }
 .nav-line:nth-child(4) {
     margin-right: -1px;    
@@ -82,10 +85,9 @@ a {
 }
 .nav-bar_button {
     height: 40px;
-    width: 100px;
+    min-width: 100px;
     border: 1px solid rgba(255, 255, 255, 1);
     background-color: transparent;
-    margin-left: 199px;
     color: var(--white-color);
 }
 .header__main_wrapper {
@@ -102,7 +104,7 @@ a {
     color: var(--white-color);
 }
 .header__text-p {
-    width: 446px;
+    max-width: 446px;
     font-weight: 500;
     font-size: 24px;
     line-height: 36px;
@@ -120,11 +122,6 @@ a {
     border: none;
     margin: 55px auto 0;
     padding-right: 6px;
-}
-
-
-@media screen and (max-width: 1200px) {
-    
 }
 
 
@@ -151,7 +148,7 @@ a {
     color: var(--black-color);
 }
 .video__text-p {
-    width: 445px;
+    max-width: 445px;
     padding: 45px 0 14px;
 
 }
@@ -163,12 +160,7 @@ a {
 }
 
 
-@media screen and (max-width: 1200px) {
-    
-}
-
-
-.overview__container {
+.overview {
     background-color: var(--gray-rbg-color);
 }
 .overview__headline_h2 {
@@ -231,11 +223,6 @@ a {
 .overview__item-3 {
     background-image: url(../img/overview__image-file-3.png);
     background-repeat: no-repeat;
-}
-
-
-@media screen and (max-width: 1200px) {
-    
 }
 
 
@@ -331,12 +318,7 @@ a {
 }
 
 
-@media screen and (max-width: 1200px) {
-    
-}
-
-
-.app-download__container {
+.app-download {
     background-color: var(--pink-color);
 }
 .app-download__headline_h2 {
@@ -345,7 +327,7 @@ a {
     padding-top: 122px;
 }
 .app-download__text-p {
-    width: 445px;
+    max-width: 445px;
     padding: 48px 0 43px;
     color: var(--white-color)
 }
@@ -360,11 +342,6 @@ a {
 }
 
 
-@media screen and (max-width: 1200px) {
-    
-}
-
-
 .contact-us__flex-box {
     display: flex;
     justify-content: space-between;
@@ -375,7 +352,7 @@ a {
     padding-top: 25px;
 }
 .contact-us__text-p {
-    width: 434px;
+    max-width: 434px;
     padding-top: 55px;
 }
 .contact-us__name,
@@ -401,12 +378,7 @@ a {
 }
 
 
-@media screen and (max-width: 1200px) {
-    
-}
-
-
-.footer__container {
+.footer {
     background-color: var(--gray-rbg-color);
 }
 .footer__headline_h4 {
@@ -431,10 +403,179 @@ a {
     padding: 45px 0 47px;
 }
 .footer__container_white-line {
-    padding-bottom: 222px;
+    height: 222px;
+    background-color: #FFFFFF;
 }
 
 
-@media screen and (max-width: 1200px) {
-    
+@media screen and (max-width: 1160px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+@media screen and (max-width: 1140px) {
+    .overview__flex-box {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-bottom: 65px;
+    }
+    .overview__item {
+        margin-bottom: 35px;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .video__image-wrapper,
+    .app-download__image-wrapper {
+        margin-right: 0;
+    }
+    .features__flex-box,
+    .contact-us__flex-box {
+        flex-wrap: wrap;
+    }
+    .features__item {
+        margin-bottom: 40px;
+    }
+    .contact-us__text-wrapper {
+        margin-right: 15px;
+        margin-bottom: 24px;
+    }
+}
+@media screen and (max-width: 1029px) {
+    .logo-wrapper {
+        margin-right: 50px;
+    }
+    .features__flex-box {
+        padding-bottom: 50px;
+    }
+    .contact-us__flex-box {
+        margin: 75px auto;
+    }
+    .contact-us__text-wrapper {
+        padding: 0;
+    }
+    .footer__container_white-line {
+        height: 110px;
+    }
+}
+@media screen and (max-width: 990px) {
+    .header__nav-bar_flex {
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 934px) {
+    .video__headline_h2,
+    .app-download__headline_h2 {
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 70px;
+    }
+    .video__flex-box {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-content: center;
+    }
+    .video__image-wrapper,
+    .app-download__image-wrapper {
+        margin: 45px 10px 0 0;
+    }
+    .contact-us__flex-box {
+        justify-content: center;
+    }
+    .contact-us__headline_h2 {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 823px) {
+    .header__flex-box {
+        flex-wrap: wrap;
+    }
+    .nav-line {
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 630px) {
+    .header__headline-h1 {
+        font-size: 52px;
+    }
+    .header__nav-bar {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 570px) {
+    form,
+    .contact-us__name,
+    .contact-us__phone
+    {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 505px) {
+    .features__item-4 {
+        width: 191px;
+    }
+    .features__flex-box {
+        justify-content: center;
+    }
+    .header__nav-bar_flex {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 480px) {
+    .header__main_wrapper {
+        padding: 15px 0 50px;
+    }
+    .header__flex-box {
+        padding: 15px 0;
+    }
+    .header__headline-h1 {
+        font-size: 42px;
+    }
+    .header__text-p {
+        font-size: 19px;
+    }
+    .video__image-file,
+    .app-download__image-file {
+        max-width: 100%;
+    }
+    .video__text-wrapper 
+    .app-download__text-wrapper {
+        margin: 0 10px;
+    }
+    .video__image-wrapper,
+    .app-download__image-wrapper {
+        margin-left: 10px;
+    }
+    .p-text_style,
+    .video__text-p {
+        padding-left: 10px;
+    }
+    .video__flex-box {
+        padding-left: 10px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .header__headline-h1 {
+        font-size: 34px;
+    }
+}
+@media screen and (max-width: 310px) {
+    .header__headline-h1,
+    .h2_style {
+        font-size: 26px;
+    }
+    .header__text-p {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 310px) {
+    .footer__container_white-line {
+        height: 55px;
+    }
+    .overview__text-wrapper {
+        width: 275px;
+    }
+    .overview__item {
+        background-size: contain;
+    }
 }
